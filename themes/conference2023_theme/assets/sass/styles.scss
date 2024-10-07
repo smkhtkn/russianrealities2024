@@ -1,0 +1,228 @@
+@font-face {
+	font-family: Evolventa;
+	src: local('Evolventa'), url('../fonts/evolventa-regular.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Evolventa;
+	src: local('Evolventa Oblique'), url('../fonts/evolventa-oblique.woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Evolventa;
+	src: local('Evolventa Bold'), url('../fonts/evolventa-bold.woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Evolventa;
+	src: local('Evolventa Bold Oblique'), url('../fonts/evolventa-boldoblique.woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family:'pt serif';
+	font-style:normal;
+	font-weight:400;
+	src:local('PT Serif'), url('../fonts/PT_Serif-Web-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family:'pt serif';
+	font-style:italic;
+	font-weight:400;
+	src:local('PT Serif'), url('../fonts/PT_Serif-Web-Italic.woff') format('woff');
+}
+
+@font-face {
+	font-family:'pt serif';
+	font-style:normal;
+	font-weight:700;
+	src:local('PT Serif'), url('../fonts/PT_Serif-Web-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family:'pt serif';
+	font-style:italic;
+	font-weight:700;
+	src:local('PT Serif'),url('../fonts/PT_Serif-Web-BoldItalic.woff') format('woff');
+}
+
+html {
+	scroll-padding-top: 5rem;
+}
+
+body {
+    font-family: sans-serif;
+  }
+
+.ptserif {
+	font-family: 'pt serif', serif;
+}
+
+.bg-special {
+    background-color: var(--color-bg-blur, rgba(255, 255, 255, .6));
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+	border-bottom: 1px solid rgb(237, 239, 242);
+}
+
+.conference-image {
+    background: url('../russia.svg') center no-repeat;
+    background-size: 92%;
+}
+
+.bckg-image {
+    background: url('../background.svg') center repeat;
+    background-size: 20%;
+}
+
+.img-person-size {
+	width: 200px;
+	height: 200px;
+	@include _1200 {
+		width: 150px;
+		height: 150px;
+	 }
+	@include _979 {
+		width: 200px;
+		height: 200px;
+	 }
+	@include _480 {
+		width: 150px;
+		height: 150px;
+	 }
+}
+
+.atypique {
+	box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1) !important;
+	border: none !important;
+}
+
+.shadow-at {
+	box-shadow: 4rem 2rem 124px rgba(0,0,0,.08);
+}
+
+input[type="email"]:focus {
+	outline: $danger solid 2px;
+	border-radius: 0;
+}
+
+input[type="text"]:focus {
+	outline: $danger solid 2px;
+	border-radius: 0;
+}
+
+@media (min-width: 1200px) {
+	.bd-toc {
+	  position:-webkit-sticky;
+	  position:sticky;
+	  top:10rem;
+	  right:0;
+	  z-index:2;
+	  height:calc(100vh - 7rem);
+	  overflow-y:auto
+	}
+  }
+  .bd-toc nav {
+	font-size:.875rem;
+  }
+  .bd-toc nav ul {
+	padding-left:0;
+	margin-bottom:0;
+	list-style:none
+  }
+  .bd-toc nav ul ul {
+	padding-left:1rem
+  }
+  .bd-toc nav a {
+	display:block;
+	padding:.125rem 0 .125rem .75rem;
+	color:inherit;
+	text-decoration:none;
+	border-left:.125rem solid transparent
+  }
+  .bd-toc nav a:hover,
+  .bd-toc nav a.active {
+	color:$danger;
+	border-left-color:$danger;
+  }
+  .bd-toc nav a.active {
+	font-weight:500
+  }
+  .bd-toc nav a code {
+	font:inherit
+  }
+  .bd-toc-toggle {
+	display:flex;
+	align-items:center
+  }
+
+.f-875 {
+	font-size:.875rem;
+}
+
+.f-1 {
+	font-size:1rem;
+}
+
+.stmologo {
+	margin-top: -5px;
+	height: 40px;
+	@include _1200 {
+		height: 36px;
+	 }
+	@include _979 {
+		height: 32px;
+	 }
+	@include _600 {
+		margin-top: -10px;
+		height: 26px;
+	 }
+}
+
+.registrationform {
+	width: 75%;
+	@include _1400 {
+		width: 85%;
+	 }
+	@include _979 {
+		width: 80%;
+	 }
+	@include _768 {
+		width: 85%;
+	 }
+	@include _480 {
+		width: 100%;
+	 }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-close:focus,
+.btn-close:active,
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.own-close {
+    background: url('../close.svg') center no-repeat;
+	background-size: 55%;
+}
+
+.d-none-initial {
+	display: none;
+}

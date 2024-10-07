@@ -1,0 +1,37 @@
+baseURL = 'https://stranaimir2023.sakharov.world/'
+languageCode = 'ru'
+title = 'О стране и мире: Российские реалии 2023'
+theme = 'conference2023_theme'
+publishDir = 'docs'
+relativeURLS = true
+
+[params]
+  description = 'Международная конференция «Страна и мир» посвящена российской агрессии против Украины и тому, как эта война меняет Россию. Мы будем говорить о трансформации политического режима и его идеологии, состоянии российского общества, репрессиях и военных преступлениях, новой волне эмиграции, международной политике и экономике.'
+  images = ['opengraph-ru.png']
+  title = 'О стране и мире: Российские реалии 2023'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 5
+    ordered = false

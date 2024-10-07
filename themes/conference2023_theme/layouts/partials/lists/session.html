@@ -1,0 +1,12 @@
+<h3 class="display-6 mb-4"><mark class="text-white bg-danger">Сессия {{with .ssnumber}}{{.}}{{end}}</mark></h3>
+<div class="d-flex flex-wrap align-items-center"><h3 class="display-4 fw-bold me-2 ptserif">{{with .ssname}}{{.}}{{end}}</h3><div class="badge fw-normal text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-0 {{with .badgeparam}}{{.}}{{end}}"><span class="display-8">{{with .badgecontent}}{{.}}{{end}}</span></div></div>
+<h4 class="display-7 mb-4">{{with .sstime}}{{.}}{{end}}</h4>
+<div class="mb-4 {{with .dsg}}{{.}}{{end}}" style="display: none;">
+    <div class="d-inline fs-4 text-body-secondary">
+        Организовано совместно с Немецким Сахаровским обществом
+        <a class="ms-lg-2" href="https://sacharow.de/" target="_blank">
+            <img class="stmologo" src="dsglogo.png" alt="Deutsche Sacharow Gesellschaft"/>
+        </a>
+    </div>
+</div>
+<p class="lead mb-5">{{with .ssdesc}}{{.}}{{end}}</p>

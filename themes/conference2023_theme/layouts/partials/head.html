@@ -1,0 +1,16 @@
+<title>Страна и мир: российские реалии 2023</title>
+<meta charset="utf-8">
+<meta name="description"
+    content="Международная конференция «Страна и мир» посвящена российской агрессии против Украины и тому, как эта война меняет Россию. Мы будем говорить о трансформации политического режима и его идеологии, состоянии российского общества, репрессиях и военных преступлениях, новой волне эмиграции, международной политике и экономике. Среди выступающих Екатерина Шульман, Кирилл Рогов, Сергей Гуриев, Николай Петров, Александр Морозов и Андрей Колесников." />
+<meta name="dc.relation" content="{{ .Site.BaseURL }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#1A94D2" />
+
+{{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed") }}
+
+{{ $style := resources.Get "sass/main.scss" | toCSS  $options | minify }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
+
+{{ template "_internal/opengraph.html" . }}
+
+<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />

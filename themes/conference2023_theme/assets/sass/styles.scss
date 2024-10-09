@@ -101,6 +101,22 @@ body {
 	 }
 }
 
+.pb-video {
+	padding-bottom: 56.25% !important;
+}
+
+.stmlogo {
+	height: 32px;
+	@include _600 {
+		height: 20px;
+	 }
+}
+.stmlogo1 {
+	@include _600 {
+		height: 20px;
+	 }
+}
+
 .atypique {
 	box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1) !important;
 	border: none !important;
@@ -176,16 +192,6 @@ input[type="text"]:focus {
 .stmologo {
 	margin-top: -5px;
 	height: 40px;
-	@include _1200 {
-		height: 36px;
-	 }
-	@include _979 {
-		height: 32px;
-	 }
-	@include _600 {
-		margin-top: -10px;
-		height: 26px;
-	 }
 }
 
 .registrationform {

@@ -232,3 +232,24 @@ input[type="text"]:focus {
 .d-none-initial {
 	display: none;
 }
+
+/*Language*/
+
+.languageoptions label.btn {
+    border-radius: 0;
+    border: 0;
+}
+
+.languageoptions input[type="radio"]:checked+label { 
+	background-color: $danger;
+    color: white !important;
+    border-radius: 0;
+    border: 0;
+}
+
+.languageoptions input[type="radio"]:not(:checked)+label:hover {
+    background-color: $danger;
+    color: white !important;
+    border-radius: 0;
+    border: 0;
+}

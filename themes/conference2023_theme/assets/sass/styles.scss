@@ -106,14 +106,28 @@ body {
 }
 
 .stmlogo {
-	height: 32px;
-	@include _600 {
+	height: 12px;
+	@include media-breakpoint-up(sm) {
 		height: 20px;
+	 }
+	 @include media-breakpoint-up(md) {
+		height: 32px;
 	 }
 }
 .stmlogo1 {
-	@include _600 {
+	height: 12px;
+	@include media-breakpoint-up(sm) {
 		height: 20px;
+	 }
+}
+.stmologo {
+	margin-top: -5px;
+	height: 30px;
+	 @include media-breakpoint-up(md) {
+		height: 38px;
+	 }
+	 @include media-breakpoint-up(lg) {
+		height: 40px;
 	 }
 }
 
@@ -187,11 +201,6 @@ input[type="text"]:focus {
 
 .f-1 {
 	font-size:1rem;
-}
-
-.stmologo {
-	margin-top: -5px;
-	height: 55px;
 }
 
 .registrationform {

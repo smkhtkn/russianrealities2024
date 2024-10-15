@@ -130,6 +130,16 @@ body {
 		height: 40px;
 	 }
 }
+.stmologo1 {
+	margin-top: -5px;
+	height: 36px;
+	 @include media-breakpoint-up(md) {
+		height: 38px;
+	 }
+	 @include media-breakpoint-up(lg) {
+		height: 40px;
+	 }
+}
 
 .atypique {
 	box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1) !important;

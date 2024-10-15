@@ -31,7 +31,7 @@
     <a class="navbar-brand" href="../">
       <img
         class="stmlogo"
-        src="stmlogo.svg"
+        src="../stmlogo.svg"
         alt="Страна и мир"
         style="margin-top: -1px;"
       />
@@ -43,7 +43,13 @@
     </button>
 
     
-    <div class="collapse navbar-collapse justify-content-end" id="navbarbutton">        
+    <div class="collapse navbar-collapse justify-content-end" id="navbarbutton">
+      <div class="mx-1 mx-md-5 languageoptions">
+        <input type="radio" class="btn-check" name="options-base" id="languageru" autocomplete="off" checked>
+        <label class="btn" for="languageru">Ru</label>
+        <input type="radio" class="btn-check" name="options-base" id="languageen" autocomplete="off">
+        <label class="btn" for="languageen">En</label>
+      </div>        
         <a class="btn btn-danger rounded-0" href="https://www.youtube.com/@Ostraneimire" target="_blank" role="button">Подписаться</a>
     </div>
     
@@ -121,6 +127,33 @@
     });
   });
   </script>
+
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+      
+      document.getElementById('languageru').addEventListener('change', function () {
+          if (this.checked) {
+              window.location.href = '/';
+          }
+      });
+
+      document.getElementById('languageen').addEventListener('change', function () {
+          if (this.checked) {
+              window.location.href = '/en/';
+          }
+      });
+
+      
+      if (window.location.pathname.includes('/en/')) {
+          document.getElementById('languageen').checked = true;
+          document.getElementById('languageru').checked = false;
+      } else {
+          document.getElementById('languageru').checked = true;
+          document.getElementById('languageen').checked = false;
+      }
+  });
+</script>
   </footer>
 </body>
 </html>

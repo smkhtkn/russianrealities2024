@@ -5,51 +5,47 @@
     <div class="row mx-auto">
 
         <div class="col-xl-3">
-            {{ partial "menu.html" . }}
+            {{ partial "menu_en.html" . }}
         </div>
 
         <div class="col-xl-9 ps-xl-5">
             <div class="conference-image">
                 <div class="my-xl-5 py-xl-5 pt-5">
                     <div class="my-xl-5 mt-5 py-5">
-                        <div class="fs-3">Конференция организована проектом
-                            <a class="ms-lg-2" href="https://t.me/stranaimir" target="_blank">
-                                <img class="stmlogo1" src="../stmlogo.svg" alt="О стране и мире"/>
+                        <div class="fs-3">Organized by the project Country and World
+                            <a class="ms-lg-2" href="https://sakharov.world/" target="_blank">
+                                <img class="stmlogo1" src="../stmlogo.svg" alt="Country and World"/>
                             </a>
                         </div>
-                        <h1 class="display-1 fw-bold text-uppercase my-5 ptserif">Страна и мир: российские реалии 2024</h1>
-                        <h2 class="display-6 my-5"><mark class="text-white bg-danger">Берлин, 28-29 ноября</mark></h2>
-                        <div class="fs-3 pt-4">Медиа-партнер
-                            <a class="ms-2" href="https://radiosakharov.org/" target="_blank">
-                                <img class="stmologo" src="../rslogo.png" alt="Радио Сахаров"/>
-                            </a>
+                        <h1 class="display-1 fw-bold text-uppercase my-5 ptserif">Country and World: Russian Realities 2024</h1>
+                        <h2 class="display-6 my-5"><mark class="text-white bg-danger">Berlin, November 28-29</mark></h2>
+                        <div class="fs-3 pt-4">Media partners
+                            <a href="https://radiosakharov.org/" target="_blank"><img class="stmologo ms-2" src="../rslogo.png" alt="Radio Sakharov"/></a>
+                            <a href="https://www.themoscowtimes.com/" target="_blank"><img class="stmologo ms-2" src="../tmtlogo.svg" alt="The Moscow Times"/></a>
                         </div>
                     </div>
                 </div>
             </div>
 
         <div class="lead my-5">
-            <p>28-29 ноября 2024 года состоится международная конференция «Страна и мир: Российские Реалии-2024». Она продолжает серию ежегодных конференций, которые в 2018-2021 годах проходили в московском Сахаровском центре. С 2023 года конференция стала международной.</p>
-            <p>Мы будем говорить об агрессивной войне, которую Россия ведет в Украине уже два с половиной года, и о том, что происходит в самой России на фоне этой войны. Политологи, социологи, экономисты, специалисты по международным отношениям будут обсуждать трансформацию политического режима и его идеологии, экономику военного времени и эффективность санкционной политики Запада, состояние российского общества и репрессии внутри страны.</p>
-            <p>Среди участников конференции Кирилл Рогов, Екатерина Шульман, Александр Морозов, Мария Снеговая, Андрей Яковлев, Павел Лузин, Алексей Левинсон и другие.</p>
-            <p>Конференция будет транслироваться в прямом эфире на Youtube канале «Страна и мир». Подпишитесь <a href="https://www.youtube.com/@Ostraneimire" target=”_blank” class="link-danger">на наш канал</a> и нажмите на колокольчик, чтобы вам пришло уведомление о начале трансляции.</p>
-            <p>Вы также можете следить за обновлениями программы конференции и ее расписанием <a href="https://fb.me/e/3RLM326lG" target=”_blank” class="link-danger">в нашем мероприятии</a> в Facebook.</p>
-            <p>Куратор программы — Борис Грозовский.</p>
-            <p>Директор программы — Сергей Лукашевский.</p>
-            <p>Организационная и техническая поддержка — Дарья Басаман, Руслан Джан, Вера Рыклина, Андрей Самохоткин, Илья Фиглин.</p>
+            <p>The international conference <span class="fst-italic">Country and the World: Russian Realities-2024</span> continues the series of annual conferences, which were held at the Sakharov Centre in Moscow from 2018 to 2021. The aim of the conference is to analyze the current political, economic and social situation in Russia, which has been waging a war of aggression against Ukraine for two and a half years. The 18 papers presented at the 2-day conference discuss the transformation of the political regime in Russia, global and European political issues in relation to Russian aggression, the wartime Russian economy, the state of Russian society and the repression it faces, as well as the work of independent Russian media in exile.</p>
+            <p>The conference will take place in Berlin and will be broadcast live on the Youtube channel <a href="https://www.youtube.com/@Ostraneimire" target=”_blank” class="link-danger fst-italic">Country and World</a>. The working languages of the conference are Russian and English with simultaneous translation provided.</p>
+            <p>The program curator: Boris Grozovski.</p>
+            <p>The program director: Sergey Lukashevsky.</p>
+            <p>Technical and organizational support: Daria Basaman, Ruslan Dzhan, Vera Ryklina, Andrei Samokhotkin, Natalia Tyurina, Ilya Figlin, Nora Erdmann.</p>
         </div>
 
     <div id="DayOne" class="mt-5 mb-3 pt-5">
-        <h2 class="display-3 ptserif fw-bold">День первый</h2>
+        <h2 class="display-3 ptserif fw-bold">Day One</h2>
     </div>
     
     <div id="Session1" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 1 "ssname" "Эволюция российского политического режима" "sstime" "10.00-11.20 CET / 12.00-13.20 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 1 "ssname" "Evolution of the Russian political regime" "sstime" "10.00-11.20 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Кирилл Рогов" "image" "rogov" "affiliation" "Политолог, директор проекта Re:Russia" "theme" "" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Kirill Rogov" "image" "rogov" "affiliation" "Political scientist, director of the Re:Russia project" "theme" "TBA" "badgeparamsp" "d-block") }}
                 
-        {{partial "lists/speaker.html" (dict "name" "Екатерина Шульман" "image" "schulmann" "affiliation" "Приглашенный научный сотрудник Берлинского центра Карнеги по изучению России и Евразии" "theme" "") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Ekaterina Shulman" "image" "schulmann" "affiliation" "Political scientist, non-resident scholar at Carnegie Russia Eurasia Center Berlin" "theme" "TBA") }}
 
         {{partial "youtube" ( dict "video" "_iNF0zrDBew") }}
 
@@ -57,11 +53,11 @@
 
     <div id="Session2" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 2 "ssname" "Без Прекрасной России Будущего: есть ли хорошие сценарии?" "sstime" "11.40-13.00 CET / 13.40-15.00 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 2 "ssname" "Without a Beautiful Russia of the Future: Are There Good Scenarios?" "sstime" "11.40-13.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Андрей Колесников" "image" "kolesnikov" "affiliation" "Старший научный сотрудник Берлинского центра Карнеги по изучению России и Евразии" "theme" "" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Andrey Kolesnikov" "image" "kolesnikov" "affiliation" "Columnist for Novaya Gazeta and The New Times" "theme" "The Russian Spanish dream: is normalization after Putin possible" "badgeparamsp" "d-block") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Александр Морозов" "image" "morozov" "affiliation" "Преподаватель философского факультета Карлова университета (Прага)" "theme" "") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Alexander Morozov" "image" "morozov" "affiliation" "Political scientist" "theme" "TBA") }}
 
         {{partial "youtube" ( dict "video" "9pPXp9yHku0") }}
 
@@ -69,11 +65,11 @@
     
     <div id="Session3" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 3 "ssname" "Возможен ли прочный мир с Россией?" "sstime" "14.00-15.20 CET / 16.00-17.20 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 3 "ssname" "Is Sustainable Peace with Russia Possible?" "sstime" "14.00-15.20 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Михаил Минаков" "image" "minakov" "affiliation" "Философ, руководитель украинской исследовательской программы в Kennan Institute" "theme" "") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Mikhail Minakov" "image" "minakov" "affiliation" "Philosopher, head of the Ukrainian research program at the Kennan Institute" "theme" "Conditions for Peace in Eastern Europe and Northern Eurasia") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Андреас Умланд" "image" "umland" "affiliation" "Политолог,  аналитик Стокгольмского центра исследований Восточной Европы" "theme" "") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Andreas Umland" "image" "umland" "affiliation" "Analyst at the Stockholm Centre for Eastern European Studies (SCEEUS) at the Swedish Institute of International Affairs, Associate Professor of Political Science at the National University of Kyiv-Mohyla Academy" "theme" "TBA") }}
 
         {{partial "youtube" ( dict "video" "_eYuiHz5ak4") }}
 
@@ -81,11 +77,11 @@
     
     <div id="Session4" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 4 "ssname" "Новая холодная война" "sstime" "15.40-17.00 CET / 17.40-19.00 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 4 "ssname" "The New Cold War" "sstime" "15.40-17.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Константин Эггерт" "image" "eggert" "affiliation" "Журналист, обозреватель Deutsche Welle" "theme" "" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Konstantin Eggert" "image" "eggert" "affiliation" "Columnist and programme host at Deutsche Welle" "theme" "Invasion 2.0? Why the Baltic States consider themselves frontline states" "badgeparamsp" "d-block") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Мария Снеговая" "image" "snegovaya" "affiliation" "Политолог, постдокторант Walsh School of Foreign Service в Джорджтаунском Университете и старший сотрудник программы Европы, России и Евразии в Center for Strategic and International Studies в Вашингтоне" "theme" "" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Maria Snegovaya" "image" "snegovaya" "affiliation" "Political scientist, Adjunct Professor at the Walsh School of Foreign Service at Georgetown University, senior fellow at the Europe, Russia and Eurasia Program at the Center for Strategic and International Studies (CSIS)" "theme" "TBA" "badgeparamsp" "d-block") }}
         
         {{partial "youtube" ( dict "video" "mfo_dcpzvh8") }}
         
@@ -93,23 +89,25 @@
 
     <div id="Session5" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 5 "ssname" "Тема и спикеры уточняются" "sstime" "17.20-18.40 CET / 19.20-20.40 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 5 "ssname" "Russia and Global Politics" "sstime" "17.20-18.40 CET" "ssdesc" "" "badgeparam" "d-none") }}
         
+        {{partial "lists/speaker_en.html" (dict "name" "Stefan Meister" "image" "meister" "affiliation" "Head of the Center for Order and Governance in Eastern Europe, Russia and Central Asia at the German Council on Foreign Relations (DGAP)" "theme" "TBA") }}
+
         {{partial "youtube" ( dict "video" "92ZCEcxUsO8") }}
         
     </div>
 
     <div id="DayTwo" class="mt-5 mb-3">
-        <h2 class="display-3 ptserif fw-bold">День второй</h2>
+        <h2 class="display-3 ptserif fw-bold">Day Two</h2>
     </div>
 
     <div id="Session6" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 6 "ssname" "Что мы знаем о настроениях россиян?" "sstime" "10.00-11.20 CET / 12.00-13.20 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 6 "ssname" "What Do We Know about the Mood of Russians?" "sstime" "10.00-11.20 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Олег Журавлев" "image" "juravlev" "affiliation" "Социолог, сотрудник Лаборатории публичной социологии" "theme" "") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Oleg Zhuravlev" "image" "juravlev" "affiliation" "Sociologist, employee of the Laboratory of Public Sociology, research fellow at the Scuola Normale Superiore" "theme" "How the Attitudes and Views of Russians on War, Power and Russia are Changing: 2022-2024") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Алексей Левинсон" "image" "levinson" "affiliation" "Социолог" "theme" "" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Alexey Levinson" "image" "levinson" "affiliation" "Head of the socio-cultural research department at the Levada Center" "theme" "Are Russians tired of war? Or do they not notice it?" "badgeparamsp" "d-block") }}
 
         {{partial "youtube" ( dict "video" "p4Pb4vov5-E") }}
 
@@ -117,9 +115,11 @@
 
     <div id="Session7" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 7 "ssname" "Репрессии и права человека" "sstime" "11.40-13.00 CET / 13.40-15.00 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 7 "ssname" "Repression and Human Rights" "sstime" "11.40-13.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Сергей Давидис" "image" "davidis" "affiliation" "Руководитель правозащитного проекта «Поддержка политзаключенных. Мемориал»" "theme" "") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Sergey Davidis" "image" "davidis" "affiliation" "head of the independent human rights project «Support for political prisoners. Memorial»" "theme" "Political Repression: a Tool of Control and a Cause for Solidarity") }}
+
+        {{partial "lists/speaker_en.html" (dict "name" "Mariana Katsarova" "image" "katsarova" "affiliation" "United Nations Special Rapporteur on human rights issues within the Russian Federation" "theme" "TBA") }}
 
         {{partial "youtube" ( dict "video" "EVwqSWafAds") }}
 
@@ -127,11 +127,11 @@
     
     <div id="Session8" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 8 "ssname" "Русскоязычные медиа: между уехавшими и оставшимися" "sstime" "14.00-15.20 CET / 16.00-17.20 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 8 "ssname" "Russian-language media: between those who left and those who staying in Russia" "sstime" "14.00-15.20 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Елизавета Осетинская" "image" "osetinskaya" "affiliation" "Журналист, основатель проекта The Bell" "theme" "" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Elizaveta Osetinskaya" "image" "osetinskaya" "affiliation" "Founder of The Bell and «This is Osetinskaya» projects" "theme" "Independent Media in Exile: Economic Sustainability and Contact with the Audience" "badgeparamsp" "d-block") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Таисия Бекбулатова" "image" "bekbulatova" "affiliation" "Главный редактор интернет-проекта «Холод»" "theme" "") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Taisiya Bekbulatova" "image" "bekbulatova" "affiliation" "Founder of independent Russian publications Kholod and Kosa" "theme" "Independent media in exile: will a communicative ‘iron curtain’ emerge this time?") }}
 
         {{partial "youtube" ( dict "video" "02lRrM2UryI") }}
 
@@ -139,11 +139,11 @@
     
     <div id="Session9" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 9 "ssname" "Экономика военного времени" "sstime" "15.40-17.00 CET / 17.40-19.00 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 9 "ssname" "Economics at War" "sstime" "15.40-17.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Павел Лузин" "image" "luzin" "affiliation" "Специалист по военной политике, приглашённый научный сотрудник Школы Флетчера при Университете Тафтса в США, старший научный сотрудник Фонда Джеймстаун" "theme" "" "badgeparamsp" "d-block") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Andrei Yakovlev" "image" "yakovlev" "affiliation" "Associate Researcher, Davis Center, Harvard and Research Fellow at the Hanse-Wissenschaftskolleg" "theme" "Political Economy of Wartime") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Андрей Яковлев" "image" "yakovlev" "affiliation" "Ассоциированный исследователь Центра Дэвиса в Гарварде и научный сотрудник Hanse-Wissenschaftskolleg" "theme" "") }}
+        {{partial "lists/speaker_en.html" (dict "name" "Pavel Luzin" "image" "luzin" "affiliation" "Military policy specialist, visiting fellow at the Fletcher School, senior fellow at the Jamestown Foundation, non-resident senior fellow at the Center for European Policy Analysis" "theme" "The Russian Military-Industrial Complex and the Army at the End of the Third Year of the War" "badgeparamsp" "d-block") }}
 
         {{partial "youtube" ( dict "video" "j4tdsscTw4A") }}
 
@@ -151,7 +151,7 @@
 
     <div id="Session10" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 10 "ssname" "Заключительная дискуссия и закрытие конференции" "sstime" "17.00-18.00 CET / 19.00-20.00 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 10 "ssname" "Closing discussion" "sstime" "17.00-18.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
 
         {{partial "youtube" ( dict "video" "naj9eXC0SaA") }}
 

@@ -100,7 +100,7 @@
         
     </div>
 
-    <div id="DayTwo" class="mt-5 mb-3">
+    <div id="DayTwo" class="mt-5 pt-5 mb-3">
         <h2 class="display-3 ptserif fw-bold">День второй</h2>
     </div>
 
@@ -154,7 +154,13 @@
 
     <div id="Session10" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 10 "ssname" "Заключительная дискуссия" "sstime" "17.00-18.00 CET / 19.00-20.00 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session.html" (dict "ssnumber" 10 "ssname" "Заключительная дискуссия" "sstime" "17.00-18.30 CET / 19.00-20.30 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Маргарита Завадская" "image" "zavadskaya" "affiliation" "Политолог, социолог, научный сотрудник Финского института международных отношений" "theme" "TBA") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Элла Панеях" "image" "paneiakh" "affiliation" "Социолог" "theme" "TBA") }}
+        
+        {{partial "lists/speaker.html" (dict "name" "Николай Петров" "image" "petrov" "affiliation" "Руководитель Центра политико-географических исследований" "theme" "TBA") }}
 
         {{partial "youtube" ( dict "video" "naj9eXC0SaA") }}
 

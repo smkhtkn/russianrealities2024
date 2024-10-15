@@ -97,7 +97,7 @@
         
     </div>
 
-    <div id="DayTwo" class="mt-5 mb-3">
+    <div id="DayTwo" class="mt-5 pt-5 mb-3">
         <h2 class="display-3 ptserif fw-bold">Day Two</h2>
     </div>
 
@@ -151,7 +151,13 @@
 
     <div id="Session10" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session_en.html" (dict "ssnumber" 10 "ssname" "Closing discussion" "sstime" "17.00-18.00 CET" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session_en.html" (dict "ssnumber" 10 "ssname" "Closing discussion" "sstime" "17.00-18.30 CET" "ssdesc" "" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Margarita Zavadskaya" "image" "zavadskaya" "affiliation" "Political scientist, sociologist, researcher at the Finnish Institute of International Affairs" "theme" "TBA") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Ella Paneyah" "image" "paneiakh" "affiliation" "Sociologist" "theme" "TBA") }}
+        
+        {{partial "lists/speaker.html" (dict "name" "Nikolai Petrov" "image" "petrov" "affiliation" "Head of the Centre for Political and Geographical Studies" "theme" "TBA") }}
 
         {{partial "youtube" ( dict "video" "naj9eXC0SaA") }}
 

@@ -51,7 +51,7 @@
       </button>  
       
        <div class="collapse navbar-collapse" id="navbarbutton">      
-        <a class="btn btn-danger rounded-0" href="https://www.youtube.com/@Ostraneimire" target="_blank" role="button">Подписаться</a>
+        <a class="btn btn-danger rounded-0" href="#Registration" role="button">Зарегистрироваться</a>
       </div>
           
     </div>
@@ -868,7 +868,117 @@
 
 </div>
 
+ <div class="container pb-5">
+    <div class="row py-5 registrationform mx-auto">
 
+        <div class="py-5 p-lg-5 bg-white rounded-0 border border-3 border-danger shadow-at">
+    <h2 id="Registration" class="display-4 display-5 fw-bold text-center mb-5 ptserif">Регистрация</h2>
+    
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbww7jk_my7ZdmWjKmhycRk32u6DoTWZNg9Xxu8g8BrdKNB6ezlhRgD_euehTEM9IWD1xQ/exec" class="mx-5 d-none" id="regform">
+        <div class="d-lg-flex mb-3">
+        <div class="col-12 col-lg-6 pe-lg-3">
+            <label for="name" class="form-label display-9">Как к вам обращаться?</label>
+            <input name="Name" type="text" class="form-control-lg w-100 rounded-0 atypique" id="name" aria-describedby="nameHelp" placeholder="Марина Семенова" required>
+            <div id="nameHelp" class="form-text">При желании, вы можете указать только имя</div>
+        </div>
+        <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+            <label for="mail" class="form-label display-9">Ваша электронная почта</label>
+            <input name="Email" type="email" class="form-control-lg w-100 rounded-0 atypique" id="mail" aria-describedby="mailHelp" placeholder="name@example.com" required>
+            <div id="mailHelp1" class="form-text ">Мы отправим вам ссылки</div>
+            <div id="mailHelp2" class="form-text d-none">Мы напомним вам о конференции</div>
+        </div>
+    </div>
+        <div class="mb-3 form-check">
+            <input name="Subscription" type="checkbox" class="form-check-input" id="subscription" checked>
+            <label class="form-check-label" for="subscription">Хочу получать рассылку медиа-проекта «О стране и мире» с анонсами новых мероприятий</label>
+        </div>
+
+        <div class="mb-3 py-4 d-none">
+
+            <label for="checkSession1" class="form-label display-9">Выбрать сессии</label>
+
+            <div class="d-lg-flex">
+            <div class="col-12 col-lg-6 pe-lg-3">
+            <div class="form-check form-switch mb-2">
+                <input name="Session1" class="form-check-input" type="checkbox" role="switch" id="checkSession1">
+                <label class="form-check-label" for="checkSession1">Сессия 1: Эволюция политического режима во время войны</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session2" class="form-check-input" type="checkbox" role="switch" id="checkSession2">
+                <label class="form-check-label" for="checkSession2">Сессия 2: Репрессии и права человека</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session3" class="form-check-input" type="checkbox" role="switch" id="checkSession3">
+                <label class="form-check-label" for="checkSession3">Сессия 3: Антивоенная Россия в эмиграции</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session4" class="form-check-input" type="checkbox" role="switch" id="checkSession4">
+                <label class="form-check-label" for="checkSession4">Сессия 4: Идеология путинского режима после начала вторжения в Украину</label>
+            </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+            <div class="form-check form-switch mb-2">
+                <input name="Session5" class="form-check-input" type="checkbox" role="switch" id="checkSession5">
+                <label class="form-check-label" for="checkSession5">Сессия 5: Мировая политика (начало)</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session6" class="form-check-input" type="checkbox" role="switch" id="checkSession6">
+                <label class="form-check-label" for="checkSession6">Сессия 6: Мировая политика (окончание)</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session7" class="form-check-input" type="checkbox" role="switch" id="checkSession7">
+                <label class="form-check-label" for="checkSession7">Сессия 7: Что мы знаем о настроениях россиян?</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session8" class="form-check-input" type="checkbox" role="switch" id="checkSession8">
+                <label class="form-check-label" for="checkSession8">Сессия 8: Экономика военного времени</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="AllSessions" class="form-check-input" type="checkbox" role="switch" id="checkAllSessions" checked>
+                <label class="form-check-label" for="checkAllSessions"><span class="fw-bold">Все сессии</span></label>
+            </div>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="mb-3 py-3 ">
+
+            <label for="checkDay1" class="form-label display-9">Выбрать дни</label>
+
+            <div class="d-lg-flex">
+            <div class="col-12 col-lg-6 pe-lg-3">
+            <div class="form-check form-switch mb-2">
+                <input name="Day1" class="form-check-input" type="checkbox" role="switch" id="checkDay1" checked>
+                <label class="form-check-label" for="checkDay1">Первый день: 23 ноября</label>
+            </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+            <div class="form-check form-switch mb-2">
+                <input name="Day2" class="form-check-input" type="checkbox" role="switch" id="checkDay2" checked>
+                <label class="form-check-label" for="checkDay2">Второй день: 24 ноября</label>
+            </div>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="text-center"><button type="submit" class="btn btn-danger btn-lg rounded-0">Отправить</button></div>
+        
+    </form>
+    <div id="success-message" class="d-none mx-5 display-8 text-center">Спасибо, вы успешно зарегистрировались! В день мероприятия мы пришлем вам ссылки на конференцию. В случае, если письмо не придет, проверьте папку «Спам». При наличии дополнительных вопросов напишите нам: <a href="mailto:info@sakharov.world">info@sakharov.world</a></div>
+    <div class="alert alert-danger rounded-0" role="alert">
+        <h4 class="alert-heading">Форма регистрации</h4>
+        <p>Количество мест в зале ограничено. Если вы хотите посетить конференцию «Страна и мир: Российские реалии 2024» очно в Берлине, оставьте, пожалуйста, заявку в регистрационной форме. Мы пришлем вам письмо с адресом места проведения конференции в скором времени.</p>
+        <hr>
+        <a href="https://forms.gle/PiG6yBmc9CwChhRv7" target="_blank" class="btn btn-danger rounded-0" role="button">Заполнить форму</a>
+      </div>
+</div>
+
+    </div>
+</div>
 
 
   </main>

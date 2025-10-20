@@ -1,14 +1,14 @@
-baseURL = 'https://russianrealities2024.sakharov.world/'
+baseURL = 'https://russianrealities2025.sakharov.world/'
 languageCode = 'ru'
-title = 'Страна и мир: Российские реалии 2024'
+title = 'Страна и мир: Российские реалии 2025'
 theme = 'conference2023_theme'
 publishDir = 'docs'
 relativeURLS = true
 
 [params]
   description = 'Международная конференция «Страна и мир» посвящена российской агрессии против Украины и тому, как эта война меняет Россию. Мы будем говорить о трансформации политического режима и его идеологии, состоянии российского общества, репрессиях и военных преступлениях, новой волне эмиграции, международной политике и экономике.'
-  images = ['opengraph-ru.png']
-  title = 'Страна и мир: Российские реалии 2024'
+  images = ['opengraph_ru.png']
+  title = 'Страна и мир: Российские реалии 2025'
 
 [module]
     [[module.mounts]]

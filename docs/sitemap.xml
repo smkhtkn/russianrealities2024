@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://russianrealities2025.sakharov.world/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/en/</loc>
+    <loc>https://russianrealities2025.sakharov.world/en/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://russianrealities2025.sakharov.world/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://russianrealities2025.sakharov.world/</loc>
   </url>
 </urlset>

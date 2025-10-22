@@ -1,109 +1,43 @@
 <div class="py-5 p-lg-5 bg-white rounded-0 border border-3 border-danger shadow-at">
     <h2 id="Registration" class="display-4 display-5 fw-bold text-center mb-5 ptserif">Registration</h2>
 
-    <p>We are waiting for you on 28-29 November at the following address:</p>
-    <p class="fw-bold">Friedrichstrasse 21 <br/>10969 Berlin <br/>TAZ, Panorama Saal on the top floor (not Kantine)</p>
+    <p class="d-none">We look forward to seeing you on November 28 and 29 at:</p>
+    <p class="fw-bold d-none">Friedrichstrasse 21 <br/>10969 Berlin <br/>TAZ, Panorama Saal on the top floor (not Kantine)</p>
     
-    <form method="POST" action="https://script.google.com/macros/s/{{with .google}}{{.}}{{end}}/exec" class="mx-5 d-none" id="regform">
+    <form method="POST"
+          action="https://docs.google.com/forms/d/e/{{with .google}}{{.}}{{end}}/formResponse"
+          target="hidden_iframe"
+          class="mx-5 d-block"
+          id="regform"
+          onsubmit="window._regform_submitted = true;">
         <div class="d-lg-flex mb-3">
         <div class="col-12 col-lg-6 pe-lg-3">
-            <label for="name" class="form-label display-9">Как к вам обращаться?</label>
-            <input name="Name" type="text" class="form-control-lg w-100 rounded-0 atypique" id="name" aria-describedby="nameHelp" placeholder="Марина Семенова" required>
-            <div id="nameHelp" class="form-text">При желании, вы можете указать только имя</div>
+            <label for="name" class="form-label display-9">Your first and last name</label>
+            <input name="entry.2142176430" type="text" class="form-control-lg w-100 rounded-0 atypique" id="name" aria-describedby="nameHelp" placeholder="Michael Smith" required>
+            <div id="nameHelp" class="form-text">Please indicate how you would like to be addressed</div>
         </div>
         <div class="col-12 col-lg-6 mt-4 mt-lg-0">
-            <label for="mail" class="form-label display-9">Ваша электронная почта</label>
-            <input name="Email" type="email" class="form-control-lg w-100 rounded-0 atypique" id="mail" aria-describedby="mailHelp" placeholder="name@example.com" required>
-            <div id="mailHelp1" class="form-text {{with .online}}{{.}}{{end}}">Мы отправим вам ссылки</div>
-            <div id="mailHelp2" class="form-text {{with .inplace}}{{.}}{{end}}">Мы напомним вам о конференции</div>
+            <label for="mail" class="form-label display-9">Your email address</label>
+            <input name="entry.1438466593" type="email" class="form-control-lg w-100 rounded-0 atypique" id="mail" aria-describedby="mailHelp" placeholder="name@example.com" required>
+            <div id="mailHelp1" class="form-text {{with .online}}{{.}}{{end}}">We will remind you about the conference</div>
         </div>
     </div>
-        <div class="mb-3 form-check">
+        <div class="mb-3 form-check d-none">
             <input name="Subscription" type="checkbox" class="form-check-input" id="subscription" checked>
-            <label class="form-check-label" for="subscription">Хочу получать рассылку медиа-проекта «О стране и мире» с анонсами новых мероприятий</label>
+            <label class="form-check-label" for="subscription">I would like to receive the media project "About the Country and the World" newsletter with announcements of new events</label>
         </div>
 
-        <div class="mb-3 py-4 {{with .inplace}}{{.}}{{end}}">
+        <div class="text-center mt-5"><button type="submit" class="btn btn-danger btn-lg rounded-0">Submit</button></div>
 
-            <label for="checkSession1" class="form-label display-9">Выбрать сессии</label>
-
-            <div class="d-lg-flex">
-            <div class="col-12 col-lg-6 pe-lg-3">
-            <div class="form-check form-switch mb-2">
-                <input name="Session1" class="form-check-input" type="checkbox" role="switch" id="checkSession1">
-                <label class="form-check-label" for="checkSession1">Сессия 1: Эволюция политического режима во время войны</label>
-            </div>
-            <div class="form-check form-switch mb-2">
-                <input name="Session2" class="form-check-input" type="checkbox" role="switch" id="checkSession2">
-                <label class="form-check-label" for="checkSession2">Сессия 2: Репрессии и права человека</label>
-            </div>
-            <div class="form-check form-switch mb-2">
-                <input name="Session3" class="form-check-input" type="checkbox" role="switch" id="checkSession3">
-                <label class="form-check-label" for="checkSession3">Сессия 3: Антивоенная Россия в эмиграции</label>
-            </div>
-            <div class="form-check form-switch mb-2">
-                <input name="Session4" class="form-check-input" type="checkbox" role="switch" id="checkSession4">
-                <label class="form-check-label" for="checkSession4">Сессия 4: Идеология путинского режима после начала вторжения в Украину</label>
-            </div>
-            </div>
-
-            <div class="col-12 col-lg-6">
-            <div class="form-check form-switch mb-2">
-                <input name="Session5" class="form-check-input" type="checkbox" role="switch" id="checkSession5">
-                <label class="form-check-label" for="checkSession5">Сессия 5: Мировая политика (начало)</label>
-            </div>
-            <div class="form-check form-switch mb-2">
-                <input name="Session6" class="form-check-input" type="checkbox" role="switch" id="checkSession6">
-                <label class="form-check-label" for="checkSession6">Сессия 6: Мировая политика (окончание)</label>
-            </div>
-            <div class="form-check form-switch mb-2">
-                <input name="Session7" class="form-check-input" type="checkbox" role="switch" id="checkSession7">
-                <label class="form-check-label" for="checkSession7">Сессия 7: Что мы знаем о настроениях россиян?</label>
-            </div>
-            <div class="form-check form-switch mb-2">
-                <input name="Session8" class="form-check-input" type="checkbox" role="switch" id="checkSession8">
-                <label class="form-check-label" for="checkSession8">Сессия 8: Экономика военного времени</label>
-            </div>
-            <div class="form-check form-switch mb-2">
-                <input name="AllSessions" class="form-check-input" type="checkbox" role="switch" id="checkAllSessions" checked>
-                <label class="form-check-label" for="checkAllSessions"><span class="fw-bold">Все сессии</span></label>
-            </div>
-            </div>
-            </div>
-
-        </div>
-
-        <div class="mb-3 py-3 {{with .online}}{{.}}{{end}}">
-
-            <label for="checkDay1" class="form-label display-9">Выбрать дни</label>
-
-            <div class="d-lg-flex">
-            <div class="col-12 col-lg-6 pe-lg-3">
-            <div class="form-check form-switch mb-2">
-                <input name="Day1" class="form-check-input" type="checkbox" role="switch" id="checkDay1" checked>
-                <label class="form-check-label" for="checkDay1">Первый день: 23 ноября</label>
-            </div>
-            </div>
-
-            <div class="col-12 col-lg-6">
-            <div class="form-check form-switch mb-2">
-                <input name="Day2" class="form-check-input" type="checkbox" role="switch" id="checkDay2" checked>
-                <label class="form-check-label" for="checkDay2">Второй день: 24 ноября</label>
-            </div>
-            </div>
-            </div>
-
-        </div>
-
-        <div class="text-center"><button type="submit" class="btn btn-danger btn-lg rounded-0">Отправить</button></div>
-        
     </form>
+    <!-- невидимый iframe для бесшовной отправки -->
+     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
     <div id="success-message" class="d-none mx-5 display-8 text-center">{{with .success}}{{.}}{{end}} <a href="mailto:info@sakharov.world">info@sakharov.world</a></div>
-    <div class="alert alert-danger rounded-0" role="alert">
-        <h4 class="alert-heading">Registration form</h4>
-        <p>The number of seats in the venue is limited. If you wish to attend the Country and World: Russian Realities 2024 conference in Berlin, please register using the button below. Alternatively, if you prefer, you can listen to the conference online via Zoom with simultaneous English translation: just register, and we will send you the Zoom link via email.</p>
+    <div class="alert alert-danger rounded-0 d-none" role="alert">
+        <h4 class="alert-heading">Registration Form</h4>
+        <p>The number of seats in the hall is limited. If you want to attend the "Country and World: Russian Realities 2024" conference in person in Berlin, please fill out the registration form. We will send you an email with the address of the conference venue shortly.</p>
         <hr>
-        <a href="https://forms.gle/8DGcUDDCQUr4s5dU9" target="_blank" class="btn btn-danger rounded-0" role="button">Registration</a>
-        <a href="https://forms.gle/C8nbL74PEJo3oJEQ9" target="_blank" class="btn btn-danger rounded-0" role="button">Zoom</a>
+        <a href="https://forms.gle/PiG6yBmc9CwChhRv7" target="_blank" class="btn btn-danger rounded-0" role="button">Fill out the form</a>
       </div>
 </div>

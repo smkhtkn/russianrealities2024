@@ -19,9 +19,8 @@
                         </div>
                         <h1 class="display-1 fw-bold text-uppercase my-5 ptserif">Страна и мир: российские реалии 2025</h1>
                         <h2 class="display-6 fw-semibold my-5"><mark class="text-white bg-success px-3">Берлин / 21-22 ноября</mark></h2>
-                        <div class="fs-3 pt-4">Медиа-партнеры
+                        <div class="fs-3 pt-4">Медиа-партнер
                             <a href="https://radiosakharov.org/" target="_blank"><img class="stmologo ms-sm-2" src="../rslogo.png" alt="Радио Сахаров"/></a>
-                            <a href="https://www.themoscowtimes.com/" target="_blank"><img class="stmologo ms-sm-2" src="../tmtlogo.svg" alt="The Moscow Times"/></a>
                         </div>
                     </div>
                 </div>
@@ -50,11 +49,11 @@
 
     <div id="Session2" class="py-lg-5 py-4 mt-4">
 
-        {{partial "lists/session.html" (dict "ssnumber" 2 "ssname" "Угроза с Востока: Европа готовится к войне?" "sstime" "12.00-13.30 CET / 14.00-15.30 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+        {{partial "lists/session.html" (dict "ssnumber" 2 "ssname" "Российская угроза и ответ Европы" "sstime" "12.00-13.30 CET / 14.00-15.30 МСК" "ssdesc" "" "badgeparam" "d-none") }}
 
         {{partial "lists/speaker.html" (dict "name" "Александр Баунов" "image" "baunov" "affiliation" "Senior fellow, editor-in-chief at the Carnegie Russia Eurasia Center" "theme" "Тема будет вскоре анонсирована" "badgeparamsp" "d-block" "dsg" "d-block") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Штефан Майстер" "image" "meister" "affiliation" "Head of the Center for Order and Governance in Eastern Europe, Russia and Central Asia at the German Council on Foreign Relations (DGAP)" "theme" "Тема будет вскоре анонсирована") }}
+        {{/* {{partial "lists/speaker.html" (dict "name" "Штефан Майстер" "image" "meister" "affiliation" "Head of the Center for Order and Governance in Eastern Europe, Russia and Central Asia at the German Council on Foreign Relations (DGAP)" "theme" "Тема будет вскоре анонсирована") }} */}}
 
     </div>
     
@@ -62,7 +61,7 @@
 
         {{partial "lists/session.html" (dict "ssnumber" 3 "ssname" "Война forever: почему провалилась мирная инициатива Трампа и собирается ли Путин воевать вечно" "sstime" "14.30-16.45 CET / 16.30-18.45 МСК" "ssdesc" "" "badgeparam" "d-none") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Александр Морозов" "image" "morozov" "affiliation" "Политолог" "theme" "Тема будет вскоре анонсирована") }}
+        {{partial "lists/speaker.html" (dict "name" "Александр Морозов" "image" "morozov" "affiliation" "Политолог" "theme" "Три сценария окончания войны. Последствия для России") }}
 
         {{partial "lists/speaker.html" (dict "name" "Андреас Умланд" "image" "umland" "affiliation" "Аналитик Stockholm Centre for Eastern European Studies (SCEEUS) в Swedish Institute of International Affairs, Associate Professor of Political Science в National University of Kyiv-Mohyla Academy" "theme" "Проблемы с гарантиями безопасности для Украины" "badgeparamsp" "d-block") }}
 
@@ -102,7 +101,7 @@
 
         {{partial "lists/speaker.html" (dict "name" "Лев Гудков" "image" "gudkov" "affiliation" "" "theme" "Друзья и враги России: коллективная идентичность в состоянии СВО") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Яна Пуглирин" "image" "puglierin" "affiliation" "Глава ECFR в Берлине, старший научный сотрудник по вопросам политики" "theme" "Восприятие России европейцами. Готовится ли Европа к войне?") }}
+        {{/* {{partial "lists/speaker.html" (dict "name" "Яна Пуглирин" "image" "puglierin" "affiliation" "Глава ECFR в Берлине, старший научный сотрудник по вопросам политики" "theme" "Восприятие России европейцами. Готовится ли Европа к войне?") }} */}}
 
     </div>
     
@@ -127,6 +126,14 @@
     <div id="Session9" class="py-lg-5 py-4 mt-4">
 
         {{partial "lists/session.html" (dict "ssnumber" 9 "ssname" "Краткие выступления участников дискуссии и закрытие конференции" "sstime" "18.30-20.00 CET / 20.30-22.00 МСК" "ssdesc" "" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Андрей Перцев" "image" "pertsev" "affiliation" "Журналист, специальный корреспондент «Медузы», автор Riddle" "theme" "") }}
+        
+        {{partial "lists/speaker.html" (dict "name" "Дмитрий Стратиевский" "image" "stratievsky" "affiliation" "Политолог, историк, директор Центра изучения Восточной Европы (Osteuropa-Zentrum Berlin e.V.)" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Кирилл Шамиев" "image" "shamiev" "affiliation" "Научный сотрудник European Council on Foreign Relations" "theme" "") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Сергей Шелин" "image" "shelin" "affiliation" "Политический аналитик, автор книги «Занимательная Россия»" "theme" "") }}
 
     </div>
 

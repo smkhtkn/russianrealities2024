@@ -17,8 +17,19 @@
                                 <img class="stmlogo1" src="../stmlogo.svg" alt="О стране и мире"/>
                             </a>
                         </div>
-                        <h1 class="display-1 fw-bold text-uppercase my-5 ptserif">Страна и мир: российские реалии 2025</h1>
-                        <h2 class="display-6 fw-semibold my-5"><mark class="text-white bg-success px-3">Берлин / 21-22 ноября</mark></h2>
+                        <h1 class="display-1 fw-bold text-uppercase my-5 ptserif">Страна и&nbsp;мир: российские реалии&nbsp;2025</h1>
+                        <style>
+                        @media (max-width: 392px) {
+                            .conference-date {
+                                font-size: 1.5rem !important;
+                            }
+                            .conference-date__badge {
+                                padding-left: 0.5rem !important;
+                                padding-right: 0.5rem !important;
+                            }
+                        }
+                        </style>
+                        <h2 class="display-6 fw-semibold my-5 conference-date"><mark class="text-white bg-success px-3 conference-date__badge">Берлин / 21-22 ноября</mark></h2>
                         <div class="fs-3 pt-4">Медиа-партнер
                             <a href="https://radiosakharov.org/" target="_blank"><img class="stmologo ms-sm-2" src="../rslogo.png" alt="Радио Сахаров"/></a>
                         </div>
@@ -120,7 +131,7 @@
 
         {{partial "lists/speaker.html" (dict "name" "Лев Гудков" "image" "gudkov" "affiliation" "Научный руководитель Левада-центра" "theme" "Друзья и враги России: коллективная идентичность в состоянии СВО" "badgeparamsp" "d-block") }}
 
-        {{partial "lists/speaker.html" (dict "name" "Андреас Хейнеманн-Грюдер" "image" "gruder" "affiliation" "Профессор политологии университета Бонна, научный сотрудник Global Public Policy Institute" "theme" "Фундаменталистский исторический нарратив и российская политика") }}
+        {{partial "lists/speaker.html" (dict "name" "Андреас Хейнеманн-Грюдер" "image" "gruder" "affiliation" "Профессор политологии университета Бонна, научный сотрудник Global Public Policy Institute" "theme" "Фундаменталистский исторический нарратив и российская политика" "badgeparamsp" "d-block") }}
 
     </div>
 
